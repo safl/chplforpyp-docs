@@ -26,7 +26,17 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   numpy
+
+.. toctree::
+   :maxdepth: 2
+
    examples
+
+.. toctree::
+   :maxdepth: 2
+
+   batteries
 
 Indices and tables
 ==================
