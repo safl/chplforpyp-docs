@@ -45,3 +45,9 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+
+Bibliography
+============
+
+.. bibliography:: refs.bib
+

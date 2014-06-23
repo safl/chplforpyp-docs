@@ -31,3 +31,5 @@ A task in Chapel::
     writeln("The original task will terminate after printing this");
 
 
+Synchronization.
+
