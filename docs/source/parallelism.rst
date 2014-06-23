@@ -1,8 +1,24 @@
 Parallelism
 ===========
 
+Data Parallelism
+----------------
+
+forall, domains, arrays, reduce, scan
+...
+
+Locality
+~~~~~~~~
+
+locale, on
+
+Domain Maps
+~~~~~~~~~~~
+
 Task Parallelism
-~~~~~~~~~~~~~~~~
+----------------
+
+begin, sync, atomic variables, cobegin, coforall.
 
 A task in Chapel::
 
@@ -14,8 +30,4 @@ A task in Chapel::
     }
     writeln("The original task will terminate after printing this");
 
-Data Parallelism
-~~~~~~~~~~~~~~~~
-
-...
 
