@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Chapel for Python Programmers documentation build configuration file, created by
-# sphinx-quickstart on Sun Jun 22 21:15:17 2014.
+# sphinx-quickstart on Sun Jun 22 21:40:06 2014.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -29,8 +29,7 @@ import os
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax',
+    'sphinx.ext.pngmath',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
