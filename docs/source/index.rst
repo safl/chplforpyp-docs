@@ -6,6 +6,16 @@
 Chapel for Python Programmers
 =============================
 
+Subtitle: How I Learned to Stop Worrying and Love the Curlybracket.
+
+So, what is Chapel and why should u care? We all know that Python is the best thing since sliced bread it comes with batteries included and there is nothing that can't be expressed with Python in a short, concise, elegant, and easily readable manner.
+
+But, if you find yourself using any of these packages: multithreading, multiprocessing, pyOpenCL, pyCuda, mpi4py, NumPy, distarray, Numba, Bohrium, numexpr, and/or cython. You might feel that Python's batteries need a recharge.
+
+Consider then Chapel, it comes with a set of turbo-charged batteries, batteries for parallelism! If parallelism, communication, and performance is a concern for you, and you enjoy a nice clean syntax, then you might start caring about Chapel.
+
+Do read on.
+
 Contents:
 
 .. toctree::

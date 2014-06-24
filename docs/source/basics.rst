@@ -17,6 +17,12 @@ The Python script and main idiom::
     if __name__ == "__main__":
         main()
 
+In Chapel::
+
+    module {
+        
+    }
+
 Blocks
 ------
 
