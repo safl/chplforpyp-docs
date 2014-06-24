@@ -11,11 +11,16 @@ Modules and Main
 
 The Python script and main idiom.
 
-.. literalinclude:: /examples/modules.main.py
++-----------------------------------------------+---------------------------------------------------+
+| .. literalinclude:: /examples/modules.main.py | .. literalinclude:: /examples/modules.main.chpl   |
+|    :language: python                          |    :language: c                                   |
++-----------------------------------------------+---------------------------------------------------+
 
-In Chapel.
+Variable arguments?
+Argument unpacking?
+Return values?
+Return type declaration?
 
-.. literalinclude:: /examples/modules.main.chpl
 
 Blocks
 ------
@@ -24,6 +29,11 @@ Shorthand and fullform.
 
 Functions
 ---------
+
++-----------------------------------------------+----------------------------------------------+
+| .. literalinclude:: /examples/func.decl.py    | .. literalinclude:: /examples/func.decl.chpl |
+|    :language: python                          |    :language: c                              |
++-----------------------------------------------+----------------------------------------------+
 
 ...
 
@@ -50,6 +60,26 @@ Loops
 
 ...
 
+Switch / Case
+-------------
+
+
+
 Zippered Iteration
 ------------------
+
+Lists
+-----
+
+List-comprehension?
+
+Tuples
+------
+
+...
+
+Dictionaries (Dicts)
+--------------------
+
+Dict-comprehension?
 
