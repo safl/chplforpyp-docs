@@ -11,15 +11,13 @@ Modules and Main
 
 The Python script and main idiom.
 
-+-----------------------------------------------+---------------------------------------------------+
-| .. literalinclude:: /examples/modules.main.py | .. literalinclude:: /examples/modules.main.chpl   |
-|    :language: python                          |    :language: c                                   |
-+-----------------------------------------------+---------------------------------------------------+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/modules.main.py | | .. literalinclude:: /examples/modules.main.chpl |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
 
-Variable arguments?
-Argument unpacking?
-Return values?
-Return type declaration?
 
 
 Blocks
@@ -30,12 +28,17 @@ Shorthand and fullform.
 Functions
 ---------
 
-+-----------------------------------------------+----------------------------------------------+
-| .. literalinclude:: /examples/func.decl.py    | .. literalinclude:: /examples/func.decl.chpl |
-|    :language: python                          |    :language: c                              |
-+-----------------------------------------------+----------------------------------------------+
++-----------------------------------------------+-+----------------------------------------------+
+| Python                                        | | Chapel                                       |
++===============================================+=+==============================================+
+| .. literalinclude:: /examples/func.decl.py    | | .. literalinclude:: /examples/func.decl.chpl |
+|    :language: python                          | |    :language: c                              |
++-----------------------------------------------+-+----------------------------------------------+
 
-...
+Variable arguments?
+Argument unpacking?
+Return values?
+Return type declaration?
 
 
 Ranges and Iterators

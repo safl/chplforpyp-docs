@@ -19,7 +19,6 @@ If parallelism, communication, and performance is a concern for you, and you enj
 
 Do read on.
 
-Contents:
 
 .. toctree::
    :maxdepth: 2
