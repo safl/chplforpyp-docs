@@ -12,9 +12,9 @@ So, what is Chapel and why should u care? We all know that Python is the best th
 
 But, if you find yourself using any of these packages: multithreading, multiprocessing, pyOpenCL, pyCuda, mpi4py, NumPy, distarray, Numba, Bohrium, numexpr, and/or cython. You might feel that Python's batteries need a recharge.
 
-You might then think that you would need to delve into the world of curlybrackets, implementing low-level methods in C/C++ and binding them to Python. There is an alternative, it does have curlybrackets, but you won't get cut on the corners.
+.. You might then think that you would need to delve into the world of curlybrackets, implementing low-level methods in C/C++ and binding them to Python. There is an alternative, it does have curlybrackets, but you won't get cut on the corners.
 
-The alternative is Chapel, it comes with a set of turbo-charged batteries, batteries for parallelism!
+Consider then Chapel, it comes with a set of turbo-charged batteries, batteries for parallelism!
 If parallelism, communication, and performance is a concern for you, and you enjoy a nice clean syntax, then you might start caring about Chapel.
 
 Do read on.
