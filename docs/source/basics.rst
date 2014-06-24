@@ -9,19 +9,13 @@ print vs writeln and other console output.
 Modules and Main
 ----------------
 
-The Python script and main idiom::
+The Python script and main idiom.
 
-    def main():
-        pass
+.. literalinclude:: /examples/modules.main.py
 
-    if __name__ == "__main__":
-        main()
+In Chapel.
 
-In Chapel::
-
-    module {
-        
-    }
+.. literalinclude:: /examples/modules.main.chpl
 
 Blocks
 ------
