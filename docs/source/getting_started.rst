@@ -21,21 +21,6 @@ If you are on using a popular Linux-based operating system you will most likely 
 For installation on Windows and MacOSX and more elaborate documentation consult the file "~/chapel/README".
 
 
-See :cite:`LangChapelSpec` for an introduction to non-standard analysis.
+This is a test of using bibtex refs :cite:`LangChapelSpec` 
 
-
-Installing
-~~~~~~~~~~
-
-...
-
-Compiling
-~~~~~~~~~
-
-...
-
-Running
-~~~~~~~
-
-...
 
