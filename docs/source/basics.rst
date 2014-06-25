@@ -7,6 +7,12 @@ print vs writeln and other console output.
 Commenting code
 ---------------
 
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/comments.py        | | .. literalinclude:: /examples/comments.chpl        |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
 
 
 Blocks
@@ -74,8 +80,8 @@ Tuples
 
 ...
 
-Dictionaries (Dicts)
---------------------
+Dictionaries (Associative Arrays)
+---------------------------------
 
 Dict-comprehension?
 

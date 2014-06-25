@@ -43,12 +43,8 @@ Do read on.
 .. toctree::
    :maxdepth: 2
 
-   examples
-
-.. toctree::
-   :maxdepth: 2
-
    batteries
+
 
 Indices and tables
 ==================
@@ -57,6 +53,13 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+Appendix
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   appendix
 
 Bibliography
 ============

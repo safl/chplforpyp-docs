@@ -1,9 +1,11 @@
 Getting Started
 ===============
 
-As a Python user you are used to having Python readily available on almost every machine you use. Chapel is similarly a highly portable, however, since Chapel is an emerging technology it is not quite part of the standard software stack that is bundled with your operating system. You therefore need to go ahead and download and install the Chapel on your system.
+As a Python user you are accustomed to running and having Python readily available on almost every machine you use. Chapel is equivalently portable (and more so). However, since Chapel is an emerging technology it is not quite part of the standard software stack that comes bundled with your operating system. You therefore need to go ahead and download and install Chapel on your system.
 
-If you are on using a popular Linux-based operating system you will most likely be successful by running these commands::
+If you are on using a popular Linux-based operating system you will most likely be successful by running these commands:
+
+.. code-block:: bash
 
     # Download and unpack
     cd /tmp
@@ -18,9 +20,18 @@ If you are on using a popular Linux-based operating system you will most likely 
     # Setup your environment, add this to command to ~/.bashrc for permanent installation.
     source ~/chapel/util/setchplenv.bash
 
-For installation on Windows and MacOSX and more elaborate documentation consult the file "~/chapel/README".
+After doing the above you should be to:
 
+.. code-block:: bash
 
-This is a test of using bibtex refs :cite:`LangChapelSpec` 
+    # Compile an example program
+    chpl -o hello ~/examples/hello.chpl
+    # Run it
+    ./hello
 
+Running "./hello" should output::
+
+    Hello, world!
+
+If you are running MacOSX, Windows, or for some other the reason the above commands does not work for you then consult the official README :cite:`LangChapelReadme` or follow this installation-tutorial :cite:`LangChapelTutorial`.
 
