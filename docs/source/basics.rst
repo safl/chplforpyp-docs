@@ -1,8 +1,47 @@
-Basics
-======
+Language Basics
+===============
+
+
+Objects
+-------
+
+In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
+
+Variables and Types
+-------------------
+
+In Python variables are *implicitly* declared when assigned to along with their type. In Chapel variable declaration is *explicit*, but, the type of the variable can be inferred from its use in a manner equivalent to that of Python.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/vars.decl.py       | | .. literalinclude:: /examples/vars.decl.chpl       |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Types in Python are dynamic meaning that a variable can change type during it's lifetime.
+The type of a variable in Chapel is static and inferred at compile-time.
+
+Types Chapel are static, meaning that the inferred t statically type in contrast to dynamic duck-typing of Python. However, 
 
 Duck-typing vs. Chapels static typing and type-inference.
+
+Console input / output
+----------------------
+
 print vs writeln and other console output.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/console.py         | | .. literalinclude:: /examples/console.chpl         |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Blocks
+------
+
+Shorthand and fullform.
 
 Commenting code
 ---------------
@@ -15,13 +54,8 @@ Commenting code
 +--------------------------------------------------+-+----------------------------------------------------+
 
 
-Blocks
-------
-
-Shorthand and fullform.
-
-Functions
----------
+Functions and Types
+-------------------
 
 +-----------------------------------------------+-+----------------------------------------------+
 | Python                                        | | Chapel                                       |
@@ -35,8 +69,20 @@ Argument unpacking?
 Return values?
 Return type declaration?
 
-Ranges and Iterators
---------------------
+Ranges
+------
+
+In Python a range is a function which constructs a list. In Chapel a range is a language-construct which behaves and is used in much the same way as lists are used in Python. When u think about lists and slicing operations in Python, think of ranges in Chapel.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/ranges.py          | | .. literalinclude:: /examples/ranges.chpl          |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+.. note:: ``range`` in Python returns values in the interval ``[low, high[`` where Chapel constructs values in the interval ``[low, high]``.
+
 
 Python distinguishes between range and xrange.
 Lists vs. generators.
@@ -57,7 +103,12 @@ Address parallel constructs later.
 Switch / Case
 -------------
 
-...
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/switch.stmt.py  | | .. literalinclude:: /examples/switch.stmt.chpl  |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
 
 
 Zippered Iteration
@@ -68,7 +119,7 @@ Zippered Iteration
 String Manipulation
 -------------------
 
-
+...
 
 Lists
 -----
@@ -104,4 +155,9 @@ import random;
 use Random;
 
 import as? from module import?
+
+Strings
+-------
+
+Some disappointing 
 
