@@ -45,6 +45,10 @@ Do read on.
 
    batteries
 
+.. toctree::
+   :maxdepth: 2
+
+   misc
 
 Indices and tables
 ==================
