@@ -10,9 +10,9 @@ One of their songs might be a cover of "Hot Chocolate - Every 1's a Winner"::
     Every day I bless the day that you got through to me
     'Cause baby, I believe that you're a star
 
-    Everyone's an iterator, baby, that's the truth (yes, the truth)
+    Everyone's an iterator, that's the truth (yes, the truth)
     Making loops with you is such a thrill
-    Everyone's an iterator, baby, that's no lie (yes, no lie)
+    Everyone's an iterator, that's no lie (yes, no lie)
     You never fail to satisfy (satisfy)
     Let's do it again
 
@@ -23,18 +23,18 @@ One of their songs might be a cover of "Hot Chocolate - Every 1's a Winner"::
     Baby, it's amazing just how wonderful it is
     That the things we like to do are just the same
 
-    Everyone's an iterator, baby, that's the truth (yes, the truth)
+    Everyone's an iterator, that's the truth (yes, the truth)
     Making loops with you is such a thrill
-    Everyone's an iterator, baby, that's no lie (yes, no lie)
+    Everyone's an iterator, that's no lie (yes, no lie)
     You never fail to satisfy (satisfy)
 
     [Instrumental]
 
     Let's do it again
 
-    Everyone's an iterator, baby, that's the truth (yes, the truth)
+    Everyone's an iterator, that's the truth (yes, the truth)
     Making loops with you is such a thrill
-    Everyone's an iterator, baby, that's no lie (yes, no lie)
+    Everyone's an iterator, that's no lie (yes, no lie)
     You never fail to satisfy (satisfy)
 
     Oh, baby
