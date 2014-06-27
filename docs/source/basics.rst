@@ -21,6 +21,18 @@ Types Chapel are static, meaning that the inferred t statically type in contrast
 
 Duck-typing vs. Chapels static typing and type-inference.
 
+Literals
+~~~~~~~~
+
+These work in much the same way that you are used to. A brief overview is provided below.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/literals.py        | | .. literalinclude:: /examples/literals.chpl        |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
 Console input / output
 ----------------------
 
@@ -109,9 +121,12 @@ Loops
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-for, while do, do while
-
-Address parallel constructs later.
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/loops.while.py     | | .. literalinclude:: /examples/loops.while.chpl     |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
 
 
 More on Zipper Iteration

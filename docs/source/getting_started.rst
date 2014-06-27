@@ -35,3 +35,32 @@ Running "./hello" should output::
 
 If you are running MacOSX, Windows, or for some other the reason the above commands does not work for you then consult the official README :cite:`LangChapelReadme` or follow this installation-tutorial :cite:`LangChapelTutorial`.
 
+Compiling
+---------
+
+What is that!? A binary! Ohh my...
+
+Chapel is currently a compiled language. However, it let's you write and compile very simple programs. There is no annoying boiler-plate needed to get going.
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/hw.py           | | .. literalinclude:: /examples/hw.chpl           |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+And if you you like to structure your code, Chapel has neat means for doing so.
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/hw.main.py      | | .. literalinclude:: /examples/hw.main.chpl      |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+All examples in this tutorial / reference guide are compilable. Which means that you can take any snippet and put it into a file like `exploring.chpl` and compile it::
+
+    chpl -o exploring exploring.chpl
+
+Which will create a binary named `exploring` executing whatever you have written in exploring.chpl.
+

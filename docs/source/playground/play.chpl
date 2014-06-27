@@ -2,8 +2,8 @@ module Playground {
     use Pythonic;
 
     proc main() {
-        for (i, v) in enumerate(['running', 'with', 'scissors']) {
-            writeln(i, ' ', v);
+        for i in 1..10 by 0 {
+            writeln("#", i);
         }
     }
 
