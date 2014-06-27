@@ -1,18 +1,9 @@
-//
-// Python equivalents
-//
+module Pythonic {
 
-// These should return 1D arrays?
-proc range(nelements) {
-
-}
-
-proc range(start, stop) {
-    
-}
-
-proc range(start, stop, step) {
-
+iter enumerate(iterable) {
+    for zipped in zip(1.. , iterable) {
+        yield zipped;
+    }
 }
 
 iter xrange(nelements) {
@@ -34,10 +25,32 @@ iter xrange(start, stop, step) {
 }
 
 //
-//  NumPy Equivalents
+// Python equivalents
 //
-iter arange(start, stop, step) {
+
+// These should return 1D arrays?
+proc range(nelements) {
+
+}
+
+proc range(start, stop) {
     
 }
 
+proc range(start, stop, step) {
+
+}
+
+//
+//  NumPy Equivalents
+//
+iter arange(start, stop, step) {
+    yield 1;    
+}
+
+//
 // Hmmm how about parallel iterators? Should the above instead be forall?
+// How about parallel zipped iterators?
+
+}
+

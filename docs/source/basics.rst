@@ -1,10 +1,6 @@
 Language Basics
 ===============
 
-Objects
--------
-
-In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
 Variables and Types
 -------------------
@@ -37,17 +33,6 @@ print vs writeln and other console output.
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Blocks
-------
-
-Shorthand and fullform.
-
-Conditionals
-------------
-
-...
-
-
 Commenting code
 ---------------
 
@@ -57,6 +42,21 @@ Commenting code
 | .. literalinclude:: /examples/comments.py        | | .. literalinclude:: /examples/comments.chpl        |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
+
+Objects
+-------
+
+In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
+
+Blocks
+------
+
+Shorthand and fullform.
+
+Conditionals
+------------
+
+...
 
 
 Ranges
@@ -99,14 +99,20 @@ Loops
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/loops.enumerate.py | | .. literalinclude:: /examples/loops.enumerate.chpl |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
 
 for, while do, do while
 
 Address parallel constructs later.
 
 
-Zippered Iteration
-------------------
+More on Zipper Iteration
+------------------------
 
 ...
 
@@ -177,6 +183,14 @@ import random;
 use Random;
 
 import as? from module import?
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/modules.import.py  | | .. literalinclude:: /examples/modules.import.chpl  |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
 
 Strings
 -------
