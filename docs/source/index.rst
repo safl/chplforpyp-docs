@@ -50,6 +50,11 @@ Do read on.
 
    misc
 
+.. toctree::
+   :maxdepth: 2
+
+   keywords
+
 Indices and tables
 ==================
 

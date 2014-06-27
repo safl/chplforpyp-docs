@@ -1,4 +1,2 @@
-
-
-writeln(typeToString((1..10).type));
-
+1..9    // 1, 2, 3, 4, 5, 6, 7, 8, 9
+9..1    // nothing / empty

@@ -1,7 +1,6 @@
 Language Basics
 ===============
 
-
 Objects
 -------
 
@@ -43,6 +42,12 @@ Blocks
 
 Shorthand and fullform.
 
+Conditionals
+------------
+
+...
+
+
 Commenting code
 ---------------
 
@@ -53,6 +58,57 @@ Commenting code
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
+
+Ranges
+------
+
+In Python a range is a function which constructs a list. In Chapel a range is a language-construct which behaves and is used in much the same way as lists are used in Python. When u think about lists and slicing operations in Python, think of ranges in Chapel.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/ranges.py          | | .. literalinclude:: /examples/ranges.chpl          |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+.. note::
+    In Python, ``range`` return values in the interval ``[start, stop[``.
+    In Chapel a range-expression yields values the interval ``[start, stop]``.
+
+For both languages the above is a shorthand of the wider form: ``start, stop, step``.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/ranges.skip.py     | | .. literalinclude:: /examples/ranges.skip.chpl     |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Python distinguishes between range and xrange.
+Lists vs. generators.
+Use of ranges.
+
+
+Loops
+-----
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/loops.for.py       | | .. literalinclude:: /examples/loops.for.chpl       |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+
+for, while do, do while
+
+Address parallel constructs later.
+
+
+Zippered Iteration
+------------------
+
+...
 
 Functions and Types
 -------------------
@@ -69,36 +125,6 @@ Argument unpacking?
 Return values?
 Return type declaration?
 
-Ranges
-------
-
-In Python a range is a function which constructs a list. In Chapel a range is a language-construct which behaves and is used in much the same way as lists are used in Python. When u think about lists and slicing operations in Python, think of ranges in Chapel.
-
-+--------------------------------------------------+-+----------------------------------------------------+
-| Python                                           | | Chapel                                             |
-+==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.py          | | .. literalinclude:: /examples/ranges.chpl          |
-|    :language: python                             | |    :language: c                                    |
-+--------------------------------------------------+-+----------------------------------------------------+
-
-.. note:: ``range`` in Python returns values in the interval ``[low, high[`` where Chapel constructs values in the interval ``[low, high]``.
-
-
-Python distinguishes between range and xrange.
-Lists vs. generators.
-Use of ranges.
-
-Conditionals
-------------
-
-...
-
-Loops
------
-
-for, while do, do while
-
-Address parallel constructs later.
 
 Switch / Case
 -------------
@@ -111,10 +137,6 @@ Switch / Case
 +-----------------------------------------------+-+-------------------------------------------------+
 
 
-Zippered Iteration
-------------------
-
-...
 
 String Manipulation
 -------------------
@@ -160,4 +182,3 @@ Strings
 -------
 
 Some disappointing 
-
