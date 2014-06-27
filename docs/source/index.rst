@@ -54,6 +54,11 @@ Do read on.
 
    keywords
 
+.. toctree::
+   :maxdepth: 2
+
+   pythonic
+
 Indices and tables
 ==================
 

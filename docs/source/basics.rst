@@ -88,6 +88,9 @@ Python distinguishes between range and xrange.
 Lists vs. generators.
 Use of ranges.
 
+# stuff
+
+Infinite ranges.. 
 
 Loops
 -----
