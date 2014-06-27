@@ -9,7 +9,9 @@ Repository backing: chapel-for-python-programmers.readthedocs.org
 
 ### How do I get set up? ###
 
-* Install sphinxdoc (http://sphinx-doc.org/)
+* Install sphinxdoc (http://sphinx-doc.org/), pybtex
+pip install sphinxcontrib.bibtex
+
 * Create an account on https://readthedocs.org/
 * Send me an email
 
