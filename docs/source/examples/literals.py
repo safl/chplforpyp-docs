@@ -1,19 +1,24 @@
-True        # Booleans
-False
+bl = True        # Booleans
+bl = False
 
-42          # Unsigned digits
--42         # Signed digits
+ud = 42          # Unsigned digits
+sd = -42         # Signed digits
 
-0x2A        # Hex-Digits
-0X2A
+hd = 0x2A        # Hex-Digits
+hd = 0X2A
 
-0b101010    # Binary-Digits
-0B101010
+bd = 0b101010    # Binary-Digits
+bd = 0B101010
 
-42.0        # Reals
+r = 42.0        # Reals
 
-'42'        # Strings
+s = '42'        # Strings
 
-"42"
+s = "42"
 
-            # Complex / imaginary
+# Complex / imaginary
+z = 1 + 2.0j
+
+# Complex accessors
+z.real()    # For the real part
+z.imag()    # For for imaginary part

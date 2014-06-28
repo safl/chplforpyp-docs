@@ -1,19 +1,24 @@
-true;       // Booleans
-false;
+var bl = true;       // Booleans
+    bl = false;
 
-42;         // Unsigned digits
--42;        // Signed digits
+var ud = 42;         // Unsigned digits
+var sd = -42;        // Signed digits
 
-0x2A;       // Hex-Digits
-0X2A;
+var hd = 0x2A;       // Hex-Digits
+    hd = 0X2A;
 
-0b101010;   // Binary-Digits
-0B101010;
+var bd = 0b101010;   // Binary-Digits
+    bd = 0B101010;
 
-42.0;       // Reals
+var r = 42.0;       // Reals
 
-'42';       // Strings
+var s = '42';       // Strings
+    s = "42";
 
-"42";
+// Complex / imaginary
+var z = 1 + 2.0i;           // Common
+    z = (1.0, 2.0):complex; // Alternative syntax
 
-            // Complex / imaginary
+// Complex accessors
+z.re;       // For the real part
+z.im;       // For the imaginary part
