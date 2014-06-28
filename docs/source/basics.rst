@@ -60,17 +60,6 @@ Objects
 
 In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
-Blocks
-------
-
-Shorthand and fullform.
-
-Conditionals
-------------
-
-...
-
-
 Ranges
 ------
 
@@ -134,6 +123,29 @@ More on Zipper Iteration
 
 ...
 
+Conditionals and Blocks
+-----------------------
+
+Python is famous for using an indentation guided block-structure, thereby arguably improving readability and increasing consistency of code-style. Chapel uses curly-brackets to denote the start and end of a block.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/if.py              | | .. literalinclude:: /examples/comments.chpl        |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Switch / Case
+~~~~~~~~~~~~~
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/switch.stmt.py  | | .. literalinclude:: /examples/switch.stmt.chpl  |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+
 Functions and Types
 -------------------
 
@@ -149,16 +161,6 @@ Argument unpacking?
 Return values?
 Return type declaration?
 
-
-Switch / Case
--------------
-
-+-----------------------------------------------+-+-------------------------------------------------+
-| Python                                        | | Chapel                                          |
-+===============================================+=+=================================================+
-| .. literalinclude:: /examples/switch.stmt.py  | | .. literalinclude:: /examples/switch.stmt.chpl  |
-|    :language: python                          | |    :language: c                                 |
-+-----------------------------------------------+-+-------------------------------------------------+
 
 
 
