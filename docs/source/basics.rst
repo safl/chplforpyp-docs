@@ -22,6 +22,17 @@ Types Chapel are static, meaning that the inferred t statically type in contrast
 
 Duck-typing vs. Chapels static typing and type-inference.
 
+Comments
+--------
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/comments.py        | | .. literalinclude:: /examples/comments.chpl        |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+
 Literals
 ~~~~~~~~
 
@@ -55,18 +66,38 @@ You can read input from the console (standard input) using ``read`` and ``readln
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Notice that the interface for reading input is quite different, however, also equivally simple. In Python you need to explicitly cast the input, where in Chapel the type of the input is provided to the ``read/readln`` functions directly.
+.. note::
+    Notice that the interface for reading input is quite different, however, also equivally simple. In Python you need to explicitly cast the input, where in Chapel the type of the input is provided to the ``read/readln`` functions directly.
 
-Commenting code
----------------
+
+Conditionals and Blocks
+-----------------------
+
+Python is famous for using an indentation guided block-structure, thereby arguably improving readability and increasing consistency of code-style. Chapel uses curly-brackets to denote the start and end of a block.
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/comments.py        | | .. literalinclude:: /examples/comments.chpl        |
+| .. literalinclude:: /examples/cond.if.py         | | .. literalinclude:: /examples/cond.if.chpl         |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
+Switch / Case
+~~~~~~~~~~~~~
+
+Python does not support ``switch-statements`` and instead rely on chaining ``if-elif-else`` statements.
+
+Chapel on the other hand does have a ``switch-statements``, specifically ``select-when-otherwise`` statements:
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/cond.switch.py  | | .. literalinclude:: /examples/cond.switch.chpl  |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+.. note::
+    Notice than in the case of both Python and Chapel then these forms of ``switch-statements`` does not **fall through**, meaning that one and only one case will be executed. Coming from Python this might not surpise you, however, if you have ever written a ``switch-statement`` in other languages then this is slightly surprising.
 
 Ranges
 ------
@@ -142,35 +173,6 @@ Loops
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-
-More on Zipper Iteration
-------------------------
-
-...
-
-Conditionals and Blocks
------------------------
-
-Python is famous for using an indentation guided block-structure, thereby arguably improving readability and increasing consistency of code-style. Chapel uses curly-brackets to denote the start and end of a block.
-
-+--------------------------------------------------+-+----------------------------------------------------+
-| Python                                           | | Chapel                                             |
-+==================================================+=+====================================================+
-| .. literalinclude:: /examples/if.py              | | .. literalinclude:: /examples/comments.chpl        |
-|    :language: python                             | |    :language: c                                    |
-+--------------------------------------------------+-+----------------------------------------------------+
-
-Switch / Case
-~~~~~~~~~~~~~
-
-+-----------------------------------------------+-+-------------------------------------------------+
-| Python                                        | | Chapel                                          |
-+===============================================+=+=================================================+
-| .. literalinclude:: /examples/switch.stmt.py  | | .. literalinclude:: /examples/switch.stmt.chpl  |
-|    :language: python                          | |    :language: c                                 |
-+-----------------------------------------------+-+-------------------------------------------------+
-
-
 Functions and Types
 -------------------
 
@@ -186,18 +188,22 @@ Argument unpacking?
 Return values?
 Return type declaration?
 
+Lists and Arrays
+----------------
 
+In Python lists are an essential built-in datastructure. You might be frigthened to learn that lists are not particularly useful in Chapel. However, fear not. Many of the uses of lists in Python is handled by ranges, such as driving loops. So if that is your primary concern then take another look at the description of ranges above.
 
+If you need the feature from Python lists of having different elements of different types in a container such as::
 
-String Manipulation
--------------------
+    stuff = ['a string', 42, ['another', 'list', 'with', 'strings']]
 
-...
+Then take a look at tuples in the following section.
 
-Lists
------
+If you use lists for processing various forms of data of the same type, then what you need are Chapel arrays. Yes, that is correct, Chapel actually has arrays as first-class citizens in the languages. Chapel is to great extend all about arrays.
 
-List-comprehension?
+This remainder of this section will give a brief introduction to one dimensional arrays. More elaborate descriptions of arrays, and arrays of multiple dimensions will be provided in the section on data parallelism.
+
+TODO: introduce arrays.
 
 Tuples
 ------
@@ -241,8 +247,3 @@ Classes and Objects
 
 In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
-
-Strings
--------
-
-Some disappointing 
