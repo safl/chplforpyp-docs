@@ -215,6 +215,12 @@ Dictionaries (Associative Arrays)
 
 Dict-comprehension?
 
+Classes and Objects
+-------------------
+
+In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
+
+
 Organizing Code
 ---------------
 
@@ -242,8 +248,4 @@ import as? from module import?
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Classes and Objects
--------------------
-
-In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
