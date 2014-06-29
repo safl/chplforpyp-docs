@@ -1,6 +1,7 @@
 Language Basics
 ===============
 
+This section provides an informal language reference. It takes you through the base language features of Python and provides an example of how the equivalent is expressed in Chapel.
 
 Variables and Types
 -------------------
@@ -36,7 +37,7 @@ These work in much the same way that you are used to. A brief overview is provid
 Console input / output
 ----------------------
 
-print vs writeln and other console output.
+You can write to the console (standard output) using ``write`` and ``writeln``:
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
@@ -44,6 +45,17 @@ print vs writeln and other console output.
 | .. literalinclude:: /examples/console.py         | | .. literalinclude:: /examples/console.chpl         |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
+
+You can read input from the console (standard input) using ``read`` and ``readln``:
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/console.read.py    | | .. literalinclude:: /examples/console.read.chpl    |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Notice that the interface for reading input is quite different, however, also equivally simple. In Python you need to explicitly cast the input, where in Chapel the type of the input is provided to the ``read/readln`` functions directly.
 
 Commenting code
 ---------------
@@ -55,15 +67,13 @@ Commenting code
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Objects
--------
-
-In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
 Ranges
 ------
 
-In Python a range is a function which constructs a list. In Chapel a range is a language-construct which behaves and is used in much the same way as lists are used in Python. When u think about lists and slicing operations in Python, think of ranges in Chapel.
+In Python ``range`` is a list-constructor often used for driving for-loops or list comprehensions. For lowered memory comsumption Python provides the generator equivalent of ``range`` namely ``xrange``.
+
+In Chapel a **range** is a language-construct which behaves and is used in much the same way as lists are used in Python. When u think about lists and slicing operations in Python, think of ranges in Chapel.
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
@@ -85,13 +95,28 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Python distinguishes between range and xrange.
-Lists vs. generators.
-Use of ranges.
+...
 
-# stuff
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/ranges.short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
 
-Infinite ranges.. 
+...
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/ranges.inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+...
+
+
+
 
 Loops
 -----
@@ -210,6 +235,11 @@ import as? from module import?
 | .. literalinclude:: /examples/modules.import.py  | | .. literalinclude:: /examples/modules.import.chpl  |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
+
+Classes and Objects
+-------------------
+
+In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
 
 
 Strings
