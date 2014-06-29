@@ -19,7 +19,7 @@ One of their songs might be a cover of "Hot Chocolate - Every 1's a Winner"::
     [Instrumental]
 
     Never could explain just what was happening to me
-    Just one touch of you and I'm a flame
+    Just one yield from you and I'm a flame
     Baby, it's amazing just how wonderful it is
     That the things we like to do are just the same
 
