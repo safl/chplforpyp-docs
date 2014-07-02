@@ -5,6 +5,6 @@ For those transitioning from Python, curious about Chapel, the ``Pythonic`` modu
 
 If it is usefull it should probably be made available in a more convenient form, than this.
 
- .. literalinclude:: /playground/pythonic.chpl
+ .. literalinclude:: examples/pythonic.chpl
     :language: c
 
