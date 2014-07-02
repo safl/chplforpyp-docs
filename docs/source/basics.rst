@@ -114,7 +114,7 @@ In Chapel a **range** is a language-construct which behaves and is used in much 
 +--------------------------------------------------+-+----------------------------------------------------+
 
 .. note::
-    In Python, ``range`` return values in the interval ``[start, stop]``.
+    In Python, ``range`` return values in the interval ``[start, stop[``.
     In Chapel a range-expression yields values the interval ``[start, stop]``.
 
 For both languages the above is a shorthand of the wider form: ``start, stop, step``.
