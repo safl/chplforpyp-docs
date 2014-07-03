@@ -218,7 +218,14 @@ Dict-comprehension?
 Classes and Objects
 -------------------
 
-In Python everything is an object and all objects have a textual representation defined by the object.str(), etc.
+In Python everything is an object and all objects have a textual representation defined by the object.str(), etc. is there equivalent functionality in Chapel?
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/classes.py         | | .. literalinclude:: /examples/classes.chpl         |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
 
 
 Organizing Code

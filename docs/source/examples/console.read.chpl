@@ -7,3 +7,8 @@ writeln("And what is the name of the biological computer?");
 var second_answer = read(string);
 
 writeln("That is ", second_answer == "Earth");
+
+var line: string;
+stdin.readline(line);
+
+writeln(line);
