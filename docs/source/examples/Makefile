@@ -6,6 +6,9 @@ CHPL_FLGS=--savec ccode/
 
 all: $(EXAMPLES)
 
+print:
+	@echo $(EXAMPLES)
+
 %:
 	$(CHPL) -o bin/$@ $(CHPL_FLGS) $@.chpl
 
