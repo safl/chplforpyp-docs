@@ -208,7 +208,15 @@ TODO: introduce arrays.
 Tuples
 ------
 
-...
+Tuples work in ways quite familiar to a Python programmer. Tuples are among other things useful for packing and unpacking return-values from functions, for-loop iterator variables.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/tuples.py          | | .. literalinclude:: /examples/tuples.chpl          |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
 
 Dictionaries (Associative Arrays)
 ---------------------------------
@@ -240,13 +248,6 @@ Python names modules implicitly via the filename convention. Chapel on the other
 |    :language: python                          | |    :language: c                                 |
 +-----------------------------------------------+-+-------------------------------------------------+
 
-Importing modules.
-
-import random;
-
-use Random;
-
-import as? from module import?
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
