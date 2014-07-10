@@ -302,7 +302,9 @@ Since Python does not support arrays within the language a comparison to the wid
 
 The array syntax and semantics should be easy to follow. The interesting thing to notice is the use of ``.domain`` when doing indexed iteration. A ``domain`` is a powerful concept and you will be very pleased with it once you get to know it. However, it does require an introduction.
 
-A ``domain`` defines the set of indexes for all elements within the array. The above illustrate one convenient aspect of domains, they follow the array around, making it easy to iterate over the index-set.
+A ``domain`` defines a set of indexes. When iterating over the domain associated with an array, as in the example above, you effectively iterate over all the indexes of all elements in the array.
+
+for all elements within the array. The above illustrate one convenient aspect of domains, they follow the array around, making it easy to iterate over the index-set.
 
 Domains are covered in greater detail in section ....
 

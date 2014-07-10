@@ -9,10 +9,3 @@ for a in A {            // Element iteration
 for (i, j) in A.domain {
     writeln("(",i,",",j,") = ",A[i,j]);
 }
-
-for i in 1..10 {
-    for j in 1..10 {
-        writeln("(",i,",",j,") = ",A[i,j]);
-    }
-}
-
