@@ -300,11 +300,11 @@ Since Python does not support arrays within the language a comparison to the wid
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-The array syntax and semantics should be fairly familiar. The thing to notice is
-the use of the ``.domain`` when using indexed iteration. A ``domain`` is a
-Chapel concept, one which you will be very pleased with once you get to know it.
+The array syntax and semantics should be easy to follow. The interesting thing to notice is the use of ``.domain`` when doing indexed iteration. A ``domain`` is a powerful concept and you will be very pleased with it once you get to know it. However, it does require an introduction.
+
+A ``domain`` defines the set of indexes for all elements within the array. The above illustrate one convenient aspect of domains, they follow the array around, making it easy to iterate over the index-set.
+
 Domains are covered in greater detail in section ....
-For now just think of a domain as the set of indexes for all elements within the array. The above illustrate one convenient aspect of domains, they follow around with the array making it easy to iterate over the index-set.
 
 
 Dictionaries (Associative Arrays)
