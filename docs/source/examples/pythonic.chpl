@@ -6,19 +6,19 @@ iter enumerate(iterable) {
     }
 }
 
-iter xrange(nelements) {
+iter xrange(nelements: int) {
     for i in 0..nelements-1 by 1 {
         yield i;
     }
 }
 
-iter xrange(start, stop) {
+iter xrange(start: int, stop: int) {
     for i in start..stop-1 by 1 {
         yield i;
     }
 }
 
-iter xrange(start, stop, step) {
+iter xrange(start: int, stop: int, step: int) {
     for i in start..stop-1 by step {
         yield i;
     }

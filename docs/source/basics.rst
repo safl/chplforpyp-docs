@@ -1,3 +1,70 @@
+Getting Started
+===============
+
+As a Python user you are accustomed to running and having Python readily available on almost every machine you use. Chapel is equivalently portable (and more so). However, since Chapel is an emerging technology it is not quite part of the standard software stack that comes bundled with your operating system. You therefore need to go ahead and download and install Chapel on your system.
+
+If you are on using a popular Linux-based operating system you will most likely be successful by running these commands:
+
+.. code-block:: bash
+
+    # Download and unpack
+    cd /tmp
+    curl -L -O http://sourceforge.net/projects/chapel/files/chapel/1.9.0/chapel-1.9.0.tar.gz
+    tar xzf chapel-1.9.0.tar.gz
+    mv /tmp/chapel-1.9.0 ~/chapel
+
+    # Build Chapel
+    cd ~/chapel
+    make
+
+    # Setup your environment, add this to command to ~/.bashrc for permanent installation.
+    source ~/chapel/util/setchplenv.bash
+
+After doing the above you should be to:
+
+.. code-block:: bash
+
+    # Compile an example program
+    chpl -o hello ~/examples/hello.chpl
+    # Run it
+    ./hello
+
+Running "./hello" should output::
+
+    Hello, world!
+
+If you are running MacOSX, Windows, or for some other the reason the above commands does not work for you then consult the official README :cite:`LangChapelReadme` or follow this installation-tutorial :cite:`LangChapelTutorial`.
+
+Compiling
+---------
+
+What is that!? A binary! Ohh my...
+
+Chapel is currently a compiled language. However, it let's you write and compile very simple programs. There is no annoying boiler-plate needed to get going.
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/hw.py           | | .. literalinclude:: /examples/hw.chpl           |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+And if you you like to structure your code, Chapel has neat means for doing so.
+
++-----------------------------------------------+-+-------------------------------------------------+
+| Python                                        | | Chapel                                          |
++===============================================+=+=================================================+
+| .. literalinclude:: /examples/hw.main.py      | | .. literalinclude:: /examples/hw.main.chpl      |
+|    :language: python                          | |    :language: c                                 |
++-----------------------------------------------+-+-------------------------------------------------+
+
+All examples in this tutorial / reference guide are compilable. Which means that you can take any snippet and put it into a file like `exploring.chpl` and compile it::
+
+    chpl -o exploring exploring.chpl
+
+Which will create a binary named `exploring` executing whatever you have written in exploring.chpl.
+
+
 Language Basics
 ===============
 
@@ -15,12 +82,7 @@ In Python variables are *implicitly* declared when assigned to along with their 
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Types in Python are dynamic meaning that a variable can change type during it's lifetime.
-The type of a variable in Chapel is static and inferred at compile-time.
-
-Types Chapel are static, meaning that the inferred t statically type in contrast to dynamic duck-typing of Python. However, 
-
-Duck-typing vs. Chapels static typing and type-inference.
+Types in Python are dynamic meaning that a variable can change type during it's lifetime. The type of a variable in Chapel is static and inferred at compile-time, which means that a type is assigned and cannot be changed at runtime.
 
 Comments
 --------
@@ -113,9 +175,10 @@ In Chapel a **range** is a language-construct which behaves and is used in much 
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-.. note::
-    In Python, ``range`` return values in the interval ``[start, stop[``.
-    In Chapel a range-expression yields values the interval ``[start, stop]``.
+.. note:: Difference in bounds!
+
+   - In Python, ``range`` return values in the interval ``[start, stop[``.
+   - In Chapel a range-expression yields values the interval ``[start, stop]``.
 
 For both languages the above is a shorthand of the wider form: ``start, stop, step``.
 
@@ -188,8 +251,8 @@ Argument unpacking?
 Return values?
 Return type declaration?
 
-Lists and Arrays
-----------------
+Lists, Arrays, Tuples, and Dicts
+--------------------------------
 
 In Python lists are an essential built-in datastructure. You might be frigthened to learn that lists are not particularly useful in Chapel. However, fear not. Many of the uses of lists in Python is handled by ranges, such as driving loops. So if that is your primary concern then take another look at the description of ranges above.
 
@@ -201,14 +264,10 @@ Then take a look at tuples in the following section.
 
 If you use lists for processing various forms of data of the same type, then what you need are Chapel arrays. Yes, that is correct, Chapel actually has arrays as first-class citizens in the languages. Chapel is to great extend all about arrays.
 
-This remainder of this section will give a brief introduction to one dimensional arrays. More elaborate descriptions of arrays, and arrays of multiple dimensions will be provided in the section on data parallelism.
-
-TODO: introduce arrays.
-
 Tuples
-------
+~~~~~~
 
-Tuples work in ways quite familiar to a Python programmer. Tuples are among other things useful for packing and unpacking return-values from functions, for-loop iterator variables.
+Tuples work in ways quite familiar to a Python programmer. Tuples are among other things useful for packing and unpacking return-values from functions and having sequences of varying types.
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
@@ -217,9 +276,39 @@ Tuples work in ways quite familiar to a Python programmer. Tuples are among othe
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
+.. note:: Indexing scheme of tuples.
+
+   - In Python tuple-indexing is 0-based.
+   - In Chapel tuple-indexing is 1-based.
+
+.. note:: Mutability of tuples.
+  
+   - In Python tuples are immutable.
+   - In Chapel tuples are mutable.
+
+Arrays
+~~~~~~
+
+This section only scratches the surface of Arrays in Chapel. The use of arrays and concepts related to them are described in greater detail in the section on data parallelism.
+
+Since Python does not support arrays within the language a comparison to the widespread and popular array-library NumPy is used as a reference instead. The first example below illustrate the creation and iteration over a ``10x10`` array containing 64-bit floating point numbers.
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/arrays.py          | | .. literalinclude:: /examples/arrays.chpl          |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+The array syntax and semantics should be fairly familiar. The thing to notice is
+the use of the ``.domain`` when using indexed iteration. A ``domain`` is a
+Chapel concept, one which you will be very pleased with once you get to know it.
+Domains are covered in greater detail in section ....
+For now just think of a domain as the set of indexes for all elements within the array. The above illustrate one convenient aspect of domains, they follow around with the array making it easy to iterate over the index-set.
+
 
 Dictionaries (Associative Arrays)
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dict-comprehension?
 
@@ -256,4 +345,11 @@ Python names modules implicitly via the filename convention. Chapel on the other
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
+Misc
+----
+
+This section contains various notes on language features / curiosities. 
+
+Division
+~~~~~~~~
 

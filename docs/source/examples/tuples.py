@@ -1,5 +1,9 @@
-text = raw_input("Input callsign and radio-channel\n")
-(callsign_r, channel_r) = text.split(" ")
-(callsign, channel) = (str(callsign_r), str(channel_r))
+coord = (47.606165, -122.332233);   # Assignment
+print "coord =", coord
+                                    ## Tuple item access
+                                    #  - Indexing
+print "Latitude =", coord[0], ", Longitude =", coord[1]
 
-print "You are registrered as", callsign, "on channel", channel
+(latitude, longitude) = coord;      #  - Unpacking
+
+print "Latitude =", latitude, ", Longitude =", longitude

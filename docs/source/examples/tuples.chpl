@@ -1,17 +1,9 @@
-writeln("Input callsign and radio-channel.");
-var (callsign, channel) = read(string, int);
+var coord = (47.606165, -122.332233);   // Assignment
+writeln("coord = ", coord);
+                                        /// Tuple item access
+                                        //  - Indexing
+writeln("Latitude = ", coord(1), ", Longitude = ", coord(2));
 
-writeln("You are registrered as ", callsign, " on channel ", channel);
+var (latitude, longitude) = coord;      //  - Unpacking
 
-
-writeln("i can be different things when iterating over a tuple");
-for i in (1, "hello", 3.0) {
-    writeln("i is now", i, ".");
-}
-
-
-var coord = (10.1, 3.2);
-
-coord(2) = 20.2;
-
-writeln(coord);
+writeln("Latitude = ", latitude, ", Longitude = ", longitude);

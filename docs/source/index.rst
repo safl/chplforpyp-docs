@@ -14,12 +14,6 @@ You might also have started venturing deeper into the world of the world of curl
 
 The alternative is Chapel, it comes with a set of turbo-charged batteries for expressing parallelism, communication, and thereby providing performance! If such matters are concerns of yours, and you enjoy a nice clean syntax, then you might start caring about Chapel.
 
-
-.. toctree::
-   :maxdepth: 2
-
-   getting_started
-
 .. toctree::
    :maxdepth: 2
    

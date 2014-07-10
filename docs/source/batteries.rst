@@ -8,7 +8,7 @@ What is the equivalent of "https://docs.python.org/2/library/" ?
 argparse
 --------
 
-Config variables.
+Config variables. Param and config.
 
 multiprocessing
 ---------------
@@ -19,5 +19,8 @@ threading
 ---------
 
 See multiprocessing.
+
+time
+----
 
 
