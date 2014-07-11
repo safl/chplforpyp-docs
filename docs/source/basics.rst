@@ -309,6 +309,15 @@ Since Python does not support arrays within the language a comparison to the wid
 
     This is quite powerful feature. When using arrays as abstractions for matrices, you might find it useful to use ``1-based`` indexing and in other situations a different indexing scheme. With Chapel you can define the index-set and scheme that is most convenient for the domain you are working within.
 
+Initialization
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/arrays.init.py     | | .. literalinclude:: /examples/arrays.init.chpl     |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
 Whole-array operations.
 
 +--------------------------------------------------+-+----------------------------------------------------+
@@ -318,7 +327,24 @@ Whole-array operations.
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-...
+Reductions and scans
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/arrays.reduc.py    | | .. literalinclude:: /examples/arrays.reduc.chpl    |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
+Function promotion
+
++--------------------------------------------------+-+----------------------------------------------------+
+| Python                                           | | Chapel                                             |
++==================================================+=+====================================================+
+| .. literalinclude:: /examples/arrays.promo.py    | | .. literalinclude:: /examples/arrays.promo.chpl    |
+|    :language: python                             | |    :language: c                                    |
++--------------------------------------------------+-+----------------------------------------------------+
+
 
 Dictionaries (Associative Arrays)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
