@@ -1,4 +1,4 @@
-//
+// No need to import, arrays are built-in
 
 proc unary(element) {       // User-defined functions
     return element*3;
