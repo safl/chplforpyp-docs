@@ -300,13 +300,14 @@ Since Python does not support arrays within the language a comparison to the wid
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-The array syntax and semantics should be easy to follow. The interesting thing to notice is the use of ``.domain`` when doing indexed iteration. A ``domain`` is a powerful concept and you will be very pleased with it once you get to know it. However, it does require an introduction.
+.. note:: ``Domains`` an unfamiliar concept!
 
-A ``domain`` defines a set of indexes. When iterating over the domain associated with an array, as in the example above, you effectively iterate over all the indexes of all elements in the array.
+    The array syntax and semantics should be easy to follow. The interesting thing to notice is the use of ``.domain`` when doing indexed iteration. A ``domain`` is a powerful concept and you will be very pleased with it once you get to know it. However, it does require an introduction.
 
-for all elements within the array. The above illustrate one convenient aspect of domains, they follow the array around, making it easy to iterate over the index-set.
+    A ``domain`` defines a set of indexes. When iterating over the domain associated with an array, as in the example above, you effectively iterate over all the indexes of all elements in the array. You might be accustomed to ``0-based`` indexing from Python when using lists and tuples. With Chapel you can define whether you want your arrays to be ``0-based`` or ``1-based``.
+    In the example above, the array is ``0-based`` since the indexes are defined by the range ``0..9``. If you would prefer ``1-based`` arrays you would define it using the range ``1..10`` instead.
 
-Domains are covered in greater detail in section ....
+    This is quite powerful feature. When using arrays as abstractions for matrices, you might find it useful to use ``1-based`` indexing and in other situations a different indexing scheme. With Chapel you can define the index-set and scheme that is most convenient for the domain you are working within.
 
 
 Dictionaries (Associative Arrays)

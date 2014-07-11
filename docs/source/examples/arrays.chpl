@@ -1,6 +1,6 @@
 // No need to import, arrays are built-in
 
-var A: [1..10, 1..10] real;
+var A: [0..9, 0..9] real;
 
 for a in A {            // Element iteration
     writeln(a);
