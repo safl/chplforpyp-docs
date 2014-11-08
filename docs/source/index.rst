@@ -49,6 +49,11 @@ The alternative is Chapel, it comes with a set of turbo-charged batteries for ex
 
    pythonic
 
+.. toctree::
+   :maxdepth: 2
+
+   about
+
 Indices and tables
 ==================
 
