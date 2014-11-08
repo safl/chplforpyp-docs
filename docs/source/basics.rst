@@ -384,11 +384,3 @@ Python names modules implicitly via the filename convention. Chapel on the other
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
-Misc
-----
-
-This section contains various notes on language features / curiosities. 
-
-Division
-~~~~~~~~
-
