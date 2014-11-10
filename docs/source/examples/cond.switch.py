@@ -9,3 +9,9 @@ elif light=="red":
     print "Do not cross!"
 else:
     print "WARNING! Something is wrong with the light!"
+
+
+
+
+
+
