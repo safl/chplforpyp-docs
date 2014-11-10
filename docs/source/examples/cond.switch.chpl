@@ -12,6 +12,6 @@ select(light) {
         writeln("Do not cross!");
     }
     otherwise {
-        writeln("WARNING! Something is wrong with the light!");
+        writeln("WARNING! Traffic-light is broken!");
     }
 }
