@@ -1,4 +1,4 @@
-answer = raw_input("The Answer to the Ultimate Question of Life, the Universe, and Everything is?\n")
+answer = raw_input("The Answer to the ultimate question is?\n")
 
 print "That is", int(answer) == 42
 

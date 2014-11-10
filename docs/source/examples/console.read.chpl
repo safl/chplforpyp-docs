@@ -1,4 +1,4 @@
-writeln("The Answer to the Ultimate Question of Life, the Universe, and Everything, is?");
+writeln("The Answer to the Ultimate Question is?");
 var first_answer = read(int); // Read an line of input and store it in 'answer'
 
 writeln("That is ", first_answer == 42);
