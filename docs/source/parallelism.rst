@@ -1,23 +1,11 @@
 Parallelism
 ===========
 
-Data Parallelism
-----------------
-
-forall, domains, arrays, reduce, scan
-...
-
-Locality
-~~~~~~~~
-
-locale, on
-
-Domain Maps
-~~~~~~~~~~~
+Parallism in Chapel is thus provided by the language itself in contrast to Python which relies on modules and libraries. This section contains fewer side-by-side examples, as most of these features are harder to come by in Python, instead reference to libraries will be provided.
 
 Task Parallelism
 ----------------
-
+Task parallelism is go
 begin, sync, atomic variables, cobegin, coforall.
 
 A task in Chapel::
@@ -32,4 +20,18 @@ A task in Chapel::
 
 
 Synchronization.
+
+Data Parallelism
+----------------
+
+forall, domains, arrays, reduce, scan
+...
+
+Locality
+~~~~~~~~
+
+locale, on
+
+Domain Maps
+~~~~~~~~~~~
 
