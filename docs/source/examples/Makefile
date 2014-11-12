@@ -2,7 +2,7 @@ SRC  = $(wildcard *.chpl)
 EXAMPLES = $(subst .chpl,, $(SRC))
 
 CHPL=chpl
-CHPL_FLGS=--savec ccode/
+CHPL_FLGS=--fast --savec ccode/
 
 all: $(EXAMPLES)
 

@@ -1,7 +1,7 @@
 Parallelism
 ===========
 
-Parallism in Chapel is thus provided by the language itself in contrast to Python which relies on modules and libraries. This section contains fewer side-by-side examples, as most of these features are harder to come by in Python, instead reference to libraries will be provided.
+Parallelism in Chapel is provided by the language itself in contrast to Python which relies on modules and libraries. This section contains fewer side-by-side examples, as most of these features are harder to come by in Python, instead reference to libraries will be provided.
 
 Task Parallelism
 ----------------
@@ -11,16 +11,19 @@ In Chapel orchestration of parallel execution is provided by the built-in keywor
 If you are used to the `multiprocessing` and `threading` libraries, then think
 of a Chapel task a either a `multiprocessing.Process` or a `threading.Thread`.
 
+begin and sync
+~~~~~~~~~~~~~~
+
+The examples below implement equivalent programs in Python and Chapel where a
+function is executed in parallel, arguments are passed to the function and the
+main program waits for the function to finish.
+
 +-----------------------------------------------+-+----------------------------------------------+
 | Python                                        | | Chapel                                       |
 +===============================================+=+==============================================+
 | .. literalinclude:: /examples/par.task.py     | | .. literalinclude:: /examples/par.task.chpl  |
 |    :language: python                          | |    :language: c                              |
 +-----------------------------------------------+-+----------------------------------------------+
-
-The above examples implement equivalent programs in Python and Chapel where a
-function is executed in parallel, arguments are passed to the function and the
-main program waits for the function to finish.
 
 In Chapel the spawning of a task to done by using the `begin` statement, where
 Python requires the instantiation of a Process targeting a function and invoking
@@ -57,13 +60,41 @@ statement as done below:
 |    :language: c                                     |
 +-----------------------------------------------------+
 
+cobegin
+~~~~~~~
 
-Synchronization.
+`begin` spawns off given statement as a single task,  the `cobegin` statement
+spawns off multiple tasks; one for each statement in the given block of
+statements.
+
++-----------------------------------------------------+
+| Chapel                                              |
++=====================================================+
+| .. literalinclude:: /examples/par.task.cobegin.chpl |
+|    :language: c                                     |
++-----------------------------------------------------+
+
+In addition to spawning of a task for each statement within the block, the
+`cobegin` also implicityly syncs. That is, it waits for all the statements
+within the block to finish executing. The above could also be expressed in terms
+of `begin` and `sync` by:
+
++--------------------------------------------------------------+
+| Chapel                                                       |
++==============================================================+
+| .. literalinclude:: /examples/par.task.cobegin.begin.chpl    |
+|    :language: c                                              |
++--------------------------------------------------------------+
+
+Synchronization Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`sync`, `single`, and `atomic`
 
 Data Parallelism
 ----------------
 
-forall, domains, arrays, reduce, scan
+`forall`, domains, arrays, reduce, scan
 ...
 
 Locality

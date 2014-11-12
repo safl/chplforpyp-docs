@@ -194,7 +194,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
+| .. literalinclude:: /examples/ranges.inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -203,12 +203,9 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
+| .. literalinclude:: /examples/ranges.short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
 |    :language: python                             | |    :language: c                                    |
 +--------------------------------------------------+-+----------------------------------------------------+
-
-...
-
 
 
 
