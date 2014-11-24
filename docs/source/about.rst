@@ -11,7 +11,7 @@ The following project ideas seek to cover some ground when choosing to port a Py
 Chapel for Python/NumPy Users
 =============================
 
-The output of this project is an introduction to the Chapel language and concepts from the perspective of a NumPy user. The introduction is written is to answer the h as "I am used to doing X in NumPy how would I express X in Chapel?".
+The output of this project is an introduction to the Chapel language and concepts from the perspective of a NumPy user. The introduction is written to answer the question "I am used to doing X in NumPy, how would I express X in Chapel?".
 
 
 npbackend / Hidden Chapel

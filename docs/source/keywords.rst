@@ -1,7 +1,7 @@
 Keywords
 --------
 
-You might stumble over keywords in Chapel that did not see coming. The following code might look harmless for a Python programmer::
+You might stumble over keywords in Chapel that you did not see coming. The following code might look harmless for a Python programmer::
 
     var begin = 1;
     var end   = 10;
@@ -10,7 +10,7 @@ You might stumble over keywords in Chapel that did not see coming. The following
     }
     writeln(".");
 
-However, in Chapel ``begin`` is a keyword in the task-parallelism features of the language. The above will therefore produce an error along the lines of ``syntax error: near 'begin'``. Chapel uses the following keywords::
+However, in Chapel ``begin`` is a keyword for one of the task-parallelism features of the language. The above will therefore produce an error along the lines of ``syntax error: near 'begin'``. Chapel uses the following keywords::
 
     _           align       atomic      begin       break
     by          class       cobegin     coforall    config
