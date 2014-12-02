@@ -22,7 +22,7 @@ main program waits for the function to finish.
 | Python                                        | | Chapel                                       |
 +===============================================+=+==============================================+
 | .. literalinclude:: /examples/par.task.py     | | .. literalinclude:: /examples/par.task.chpl  |
-|    :language: python                          | |    :language: c                              |
+|    :language: python                          | |    :language: chapel                         |
 +-----------------------------------------------+-+----------------------------------------------+
 
 In Chapel, the spawning of a task is done by using the `begin` statement, while
@@ -38,7 +38,7 @@ of code can be used:
 | Chapel                                              |
 +=====================================================+
 | .. literalinclude:: /examples/par.task.nosync.chpl  |
-|    :language: c                                     |
+|    :language: chapel                                |
 +-----------------------------------------------------+
 
 Which also illustrates how you can share data between tasks. Data within scope
@@ -57,7 +57,7 @@ statement as done below:
 | Chapel                                              |
 +=====================================================+
 | .. literalinclude:: /examples/par.task.sync.chpl    |
-|    :language: c                                     |
+|    :language: chapel                                |
 +-----------------------------------------------------+
 
 cobegin
@@ -71,7 +71,7 @@ statements.
 | Chapel                                              |
 +=====================================================+
 | .. literalinclude:: /examples/par.task.cobegin.chpl |
-|    :language: c                                     |
+|    :language: chapel                                |
 +-----------------------------------------------------+
 
 In addition to spawning a task for each statement within the block, the
@@ -83,7 +83,7 @@ of `begin` and `sync` by:
 | Chapel                                                       |
 +==============================================================+
 | .. literalinclude:: /examples/par.task.cobegin.begin.chpl    |
-|    :language: c                                              |
+|    :language: chapel                                         |
 +--------------------------------------------------------------+
 
 Synchronization Variables

@@ -46,7 +46,7 @@ Chapel is currently a compiled language. However, it lets you write and compile 
 | Python                                        | | Chapel                                          |
 +===============================================+=+=================================================+
 | .. literalinclude:: /examples/hw.py           | | .. literalinclude:: /examples/hw.chpl           |
-|    :language: python                          | |    :language: c                                 |
+|    :language: python                          | |    :language: chapel                            |
 +-----------------------------------------------+-+-------------------------------------------------+
 
 And if you like to structure your code, Chapel has neat means for doing so.
@@ -55,7 +55,7 @@ And if you like to structure your code, Chapel has neat means for doing so.
 | Python                                        | | Chapel                                          |
 +===============================================+=+=================================================+
 | .. literalinclude:: /examples/hw.main.py      | | .. literalinclude:: /examples/hw.main.chpl      |
-|    :language: python                          | |    :language: c                                 |
+|    :language: python                          | |    :language: chapel                            |
 +-----------------------------------------------+-+-------------------------------------------------+
 
 All examples in this tutorial / reference guide are compilable. Which means that you can take any snippet and put it into a file like `exploring.chpl` and compile it::
@@ -79,7 +79,7 @@ In Python, variables are *implicitly* declared and their type determined when th
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/vars.decl.py       | | .. literalinclude:: /examples/vars.decl.chpl       |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Types in Python are dynamic, meaning that a variable can change type during its lifetime. The type of a variable in Chapel is static and inferred at compile-time, which means that a type is assigned and cannot be changed at runtime.
@@ -91,7 +91,7 @@ Comments
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/comments.py        | | .. literalinclude:: /examples/comments.chpl        |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 
@@ -104,7 +104,7 @@ These work in much the same way that you are used to. A brief overview is provid
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/literals.py        | | .. literalinclude:: /examples/literals.chpl        |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Console input / output
@@ -116,7 +116,7 @@ You can write to the console (standard output) using ``write`` and ``writeln``:
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/console.py         | | .. literalinclude:: /examples/console.chpl         |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 You can read input from the console (standard input) using ``read`` and ``readln``:
@@ -125,7 +125,7 @@ You can read input from the console (standard input) using ``read`` and ``readln
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/console.read.py    | | .. literalinclude:: /examples/console.read.chpl    |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 .. note::
@@ -141,7 +141,7 @@ Python is famous for using an indentation guided block-structure, thereby arguab
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/cond.if.py         | | .. literalinclude:: /examples/cond.if.chpl         |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Switch / Case
@@ -155,7 +155,7 @@ Chapel, on the other hand, does have ``switch-statements``, specifically ``selec
 | Python                                        | | Chapel                                          |
 +===============================================+=+=================================================+
 | .. literalinclude:: /examples/cond.switch.py  | | .. literalinclude:: /examples/cond.switch.chpl  |
-|    :language: python                          | |    :language: c                                 |
+|    :language: python                          | |    :language: chapel                            |
 +-----------------------------------------------+-+-------------------------------------------------+
 
 .. note::
@@ -172,7 +172,7 @@ In Chapel a **range** is a language construct which behaves and is used in much 
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/ranges.py          | | .. literalinclude:: /examples/ranges.chpl          |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 .. note:: Difference in bounds!
@@ -186,7 +186,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/ranges.skip.py     | | .. literalinclude:: /examples/ranges.skip.chpl     |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 ...
@@ -195,7 +195,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/ranges.inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 ...
@@ -204,7 +204,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/ranges.short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 
@@ -216,21 +216,21 @@ Loops
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/loops.for.py       | | .. literalinclude:: /examples/loops.for.chpl       |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/loops.enumerate.py | | .. literalinclude:: /examples/loops.enumerate.chpl |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/loops.while.py     | | .. literalinclude:: /examples/loops.while.chpl     |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Functions and Types
@@ -240,7 +240,7 @@ Functions and Types
 | Python                                        | | Chapel                                       |
 +===============================================+=+==============================================+
 | .. literalinclude:: /examples/func.decl.py    | | .. literalinclude:: /examples/func.decl.chpl |
-|    :language: python                          | |    :language: c                              |
+|    :language: python                          | |    :language: chapel                         |
 +-----------------------------------------------+-+----------------------------------------------+
 
 Variable arguments?
@@ -270,7 +270,7 @@ Tuples work in ways quite familiar to a Python programmer. Tuples are among othe
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/tuples.py          | | .. literalinclude:: /examples/tuples.chpl          |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 .. note:: Indexing scheme of tuples.
@@ -294,7 +294,7 @@ Since Python does not support arrays within the language, a comparison to the wi
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/arrays.py          | | .. literalinclude:: /examples/arrays.chpl          |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 .. note:: ``Domains`` an unfamiliar concept!
@@ -312,7 +312,7 @@ Initialization
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/arrays.init.py     | | .. literalinclude:: /examples/arrays.init.chpl     |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Whole-array operations.
@@ -321,7 +321,7 @@ Whole-array operations.
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/arrays.whole.py    | | .. literalinclude:: /examples/arrays.whole.chpl    |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Reductions and scans
@@ -330,7 +330,7 @@ Reductions and scans
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/arrays.reduc.py    | | .. literalinclude:: /examples/arrays.reduc.chpl    |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 Function promotion
@@ -339,7 +339,7 @@ Function promotion
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/arrays.promo.py    | | .. literalinclude:: /examples/arrays.promo.chpl    |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 
@@ -357,7 +357,7 @@ In Python, everything is an object and all objects have a textual representation
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/classes.py         | | .. literalinclude:: /examples/classes.chpl         |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
 
@@ -370,7 +370,7 @@ Python names modules implicitly via the filename convention. Chapel allows you t
 | Python                                        | | Chapel                                          |
 +===============================================+=+=================================================+
 | .. literalinclude:: /examples/modules.main.py | | .. literalinclude:: /examples/modules.main.chpl |
-|    :language: python                          | |    :language: c                                 |
+|    :language: python                          | |    :language: chapel                            |
 +-----------------------------------------------+-+-------------------------------------------------+
 
 
@@ -378,6 +378,6 @@ Python names modules implicitly via the filename convention. Chapel allows you t
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
 | .. literalinclude:: /examples/modules.import.py  | | .. literalinclude:: /examples/modules.import.chpl  |
-|    :language: python                             | |    :language: c                                    |
+|    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
