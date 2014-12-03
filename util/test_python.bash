@@ -13,4 +13,4 @@ log_info "Moving to: ${EXM_DIR}"
 cd $EXM_DIR
 
 log_info "Running py.test..."
-py.test --verbose
+py.test --verbose --junitxml=$REPO_ROOT/python-results.xml
