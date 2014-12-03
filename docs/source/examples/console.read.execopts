@@ -1,0 +1,4 @@
+< console.read.tt.stdin # console.read.tt.good
+< console.read.tf.stdin # console.read.tf.good
+< console.read.ft.stdin # console.read.ft.good
+< console.read.ff.stdin # console.read.ff.good
