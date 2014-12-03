@@ -1,6 +1,6 @@
 # README #
 
-Repository backing: chapel-for-python-programmers.readthedocs.org
+Repository backing: https://chapel-for-python-programmers.readthedocs.org
 
 ### What is this repository for? ###
 
@@ -9,8 +9,8 @@ Repository backing: chapel-for-python-programmers.readthedocs.org
 
 ### How do I get set up? ###
 
-* Install sphinxdoc (http://sphinx-doc.org/) and the Python packages pybtex and sphinxcontrib-bibtex
-
+* Install Python package dependencies from
+  [`requirements.txt`](requirements.txt).
 * Create an account on https://readthedocs.org/
 * Send me an email
 
@@ -23,9 +23,3 @@ Repository backing: chapel-for-python-programmers.readthedocs.org
 ### Who do I talk to? ###
 
 * Repo owner or admin
-
-### Chapel Syntax Highlighting ###
-
-* When Pygments 2.0 is released, the Chapel source code snippets can use the
-  [ChapelLexer](https://bitbucket.org/birkenfeld/pygments-main/src/bec55c895c0475097940dde470060a68e6ce6958/pygments/lexers/compiled.py?at=tip#cl-3898)
-  to highlight.
