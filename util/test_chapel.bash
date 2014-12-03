@@ -25,4 +25,15 @@ log_info "Moving to: ${EXM_DIR}"
 cd $EXM_DIR
 
 log_info "Running start_test..."
-start_test .
+test_log=$REPO_ROOT/chapel-results.log
+start_test --logfile $test_log .
+
+# Analyze the results (someday, start_test might use exit codes to indicate
+# pass/fail...)
+errors=$(grep -c -E "^\[Error" $test_log || :)
+warnings=$(grep -c -E "^\[Warning" $test_log || :)
+
+if (( $errors > 0 || $warnings > 0 )) ; then
+    log_error "Failures: ${errors} errors and ${warnings} warnings found."
+    exit 1
+fi
