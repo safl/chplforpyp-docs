@@ -31,7 +31,8 @@ class _PyTestCase(unittest.TestCase):
         return output
 
 
-class ArraysTests(_PyTestCase):
+class PyToChplTests(_PyTestCase):
+
     def test_arrays_init(self):
         self.assertEqual(
             """[  1.   2.   3.   4.   5.   6.   7.   8.   9.  10.]
@@ -497,7 +498,7 @@ Result of 9.0 / 4.0 = 2.25
         self.assertEqual('Hello, bob\n', self.runpy('par.task.py'))
 
     def test_ranges_inf(self):
-        self.assertEqual('', self.runpy('ranges.inf.py'))
+        self.assertEqual('', self.runpy('ranges_inf.py'))
 
     def test_ranges(self):
         self.assertEqual('', self.runpy('ranges.py'))
