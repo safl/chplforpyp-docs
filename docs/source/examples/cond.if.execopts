@@ -1,0 +1,3 @@
+< green.txt  # cond.if.green.good
+< red.txt    # cond.if.red.good
+< yellow.txt # cond.if.yellow.good
