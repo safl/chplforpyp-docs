@@ -3,9 +3,15 @@ Miscellaneous Notes
 
 This documentation is hosted on readthedocs.org.
 
-To work on it the following 'extra' Python extensions are needed::
+Development
+-----------
 
-    pip install sphinxcontrib-bibtex pybtex
+For development, install the Python packages listed in the ``requirements.txt`` file.
+
+.. code-block:: bash
+
+    # From the root of the git repo:
+    pip install -r requirements.txt
 
 Introspection
 -------------
