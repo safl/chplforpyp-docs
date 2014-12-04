@@ -20,5 +20,5 @@ s = "42"
 z = 1 + 2.0j
 
 # Complex accessors
-z.real()    # For the real part
-z.imag()    # For for imaginary part
+z.real    # For the real part
+z.imag    # For for imaginary part

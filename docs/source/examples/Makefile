@@ -2,17 +2,20 @@ SRC  = $(wildcard *.chpl)
 EXAMPLES = $(subst .chpl,, $(SRC))
 
 CHPL=chpl
-CHPL_FLGS=--fast --savec ccode/
+CHPL_FLAGS := --fast
+
+ECHO = @echo
 
 all: $(EXAMPLES)
 
 print:
-	@echo $(EXAMPLES)
+	$(ECHO) $(EXAMPLES)
 
-%:
-	$(CHPL) -o bin/$@ $(CHPL_FLGS) $@.chpl
+bin:
+	mkdir -pv bin/
+
+$(EXAMPLES): bin
+	-$(CHPL) -o bin/$@ $(CHPL_FLAGS) $@.chpl
 
 clean:
-	rm -rf *.o *~
-	find bin/ -type f -name "*" -exec rm  {} \;
-
+	rm -rf bin/

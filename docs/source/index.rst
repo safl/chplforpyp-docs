@@ -12,7 +12,7 @@ So, what is Chapel and why should you care? We all know that Python is the best 
 
 You might also have started venturing deeper into the world of curlybrackets. Implementing low-level methods in C/C++ and binding them to Python. In the process you might have felt that you gained performance but lost your productivity. However, there is an alternative, it does have curlybrackets, but you won't get cut on the corners.
 
-The alternative is Chapel, and it comes with a set of turbo-charged batteries for expressing parallelism, communication, and thereby providing performance! If such matters are important to you, and you enjoy a nice clean syntax, then you might start caring about Chapel.
+The alternative is Chapel_, and it comes with a set of turbo-charged batteries for expressing parallelism, communication, and thereby providing performance! If such matters are important to you, and you enjoy a nice clean syntax, then you might start caring about Chapel.
 
 .. toctree::
    :maxdepth: 2
@@ -42,9 +42,9 @@ The alternative is Chapel, and it comes with a set of turbo-charged batteries fo
 .. toctree::
    :maxdepth: 2
 
-   misc
    pythonic
    about
+   misc
 
 Indices and tables
 ==================
@@ -70,6 +70,7 @@ Bibliography
 Links
 =====
 
+.. _Chapel: http://chapel.cray.com/
 .. _Bohrium: http://www.bh107.org/
 .. _NumPy: http://www.numpy.org/
 .. _Numba: http://numba.pydata.org/

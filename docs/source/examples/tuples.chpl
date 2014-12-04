@@ -3,13 +3,13 @@ writeln("coord = ", coord);
                                     /// Tuple item access
                                     //  - Indexing
 writeln(
-    "Latitude = ", coord(1), ",
-    Longitude = ", coord(2)
+    "Latitude = ", coord(1),
+  ", Longitude = ", coord(2)
 );
 
 var (latitude, longitude) = coord;  //  - Unpacking
 
 writeln(
-    "Latitude = ", latitude, ",
-    Longitude = ", longitude
+    "Latitude = ", latitude,
+  ", Longitude = ", longitude
 );

@@ -78,7 +78,7 @@ In Python, variables are *implicitly* declared and their type determined when th
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/vars.decl.py       | | .. literalinclude:: /examples/vars.decl.chpl       |
+| .. literalinclude:: /examples/vars_decl.py       | | .. literalinclude:: /examples/vars.decl.chpl       |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -185,7 +185,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.skip.py     | | .. literalinclude:: /examples/ranges.skip.chpl     |
+| .. literalinclude:: /examples/ranges_skip.py     | | .. literalinclude:: /examples/ranges.skip.chpl     |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -194,7 +194,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
+| .. literalinclude:: /examples/ranges_inf.py      | | .. literalinclude:: /examples/ranges.inf.chpl      |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -203,7 +203,7 @@ For both languages the above is a shorthand of the wider form: ``start, stop, st
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/ranges.short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
+| .. literalinclude:: /examples/ranges_short.py    | | .. literalinclude:: /examples/ranges.short.chpl    |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -239,7 +239,7 @@ Functions and Types
 +-----------------------------------------------+-+----------------------------------------------+
 | Python                                        | | Chapel                                       |
 +===============================================+=+==============================================+
-| .. literalinclude:: /examples/func.decl.py    | | .. literalinclude:: /examples/func.decl.chpl |
+| .. literalinclude:: /examples/func_decl.py    | | .. literalinclude:: /examples/func.decl.chpl |
 |    :language: python                          | |    :language: chapel                         |
 +-----------------------------------------------+-+----------------------------------------------+
 
@@ -320,7 +320,7 @@ Whole-array operations.
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/arrays.whole.py    | | .. literalinclude:: /examples/arrays.whole.chpl    |
+| .. literalinclude:: /examples/arrays_whole.py    | | .. literalinclude:: /examples/arrays.whole.chpl    |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 
@@ -369,7 +369,7 @@ Python names modules implicitly via the filename convention. Chapel allows you t
 +-----------------------------------------------+-+-------------------------------------------------+
 | Python                                        | | Chapel                                          |
 +===============================================+=+=================================================+
-| .. literalinclude:: /examples/modules.main.py | | .. literalinclude:: /examples/modules.main.chpl |
+| .. literalinclude:: /examples/modules_main.py | | .. literalinclude:: /examples/modules.main.chpl |
 |    :language: python                          | |    :language: chapel                            |
 +-----------------------------------------------+-+-------------------------------------------------+
 
@@ -377,7 +377,7 @@ Python names modules implicitly via the filename convention. Chapel allows you t
 +--------------------------------------------------+-+----------------------------------------------------+
 | Python                                           | | Chapel                                             |
 +==================================================+=+====================================================+
-| .. literalinclude:: /examples/modules.import.py  | | .. literalinclude:: /examples/modules.import.chpl  |
+| .. literalinclude:: /examples/modules_import.py  | | .. literalinclude:: /examples/modules.import.chpl  |
 |    :language: python                             | |    :language: chapel                               |
 +--------------------------------------------------+-+----------------------------------------------------+
 

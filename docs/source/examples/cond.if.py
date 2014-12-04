@@ -19,8 +19,7 @@ elif light == "yellow":
 
 if light == "green":
     print "You can cross the street now."
-else if light == "yellow":
+elif light == "yellow":
     print "CAUTION!"
-} else {
+else:
     print "Do not cross!"
-}
