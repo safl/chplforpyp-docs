@@ -1,1 +1,0 @@
-numpy.random.chpl:3: error: Random.fillRandom is only defined for real(64), imag(64), and complex(128) arrays

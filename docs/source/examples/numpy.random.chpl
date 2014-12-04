@@ -1,3 +1,3 @@
 use Random;
-var a : [3,3] real(32);
+var a : [0..2, 0..2] real;
 fillRandom(a);
